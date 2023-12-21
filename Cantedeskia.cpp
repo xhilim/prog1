@@ -178,7 +178,7 @@ void zad10(const char* x, int tab[],int y)
 {
 	FILE* f;
 
-	errno_t Grzegorz_Braun = fopen_s(&f, x, "w");
+	errno_t Grzegorz_Braun = fopen_s(&f, x, "a");
 	for (int i = 0; i < y;i++) {
 		fprintf(f, "%d", tab[i]);
 	}
